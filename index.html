@@ -290,9 +290,9 @@ kbd{font:500 11px var(--mono);border:1px solid var(--line);border-bottom-width:2
         <div class="panel-body">
           <p class="lede">Toronto-based builder who works where AI engineering meets strategy. He prototypes the model, then makes the business case for it.</p>
           <div class="kstats">
-            <div><b data-n="4" data-dec="1">4.0</b><span>AGPA, CS at U of T</span></div>
-            <div><b data-n="6">6</b><span>roles across banking, consulting and AI</span></div>
+                        <div><b data-n="6">6</b><span>roles across banking, consulting and AI</span></div>
             <div><b data-n="50" data-suf="+">50+</b><span>IT controls validated at EY</span></div>
+            <div><b data-n="5">5</b><span>side projects shipped to the web</span></div>
           </div>
           <dl class="facts">
             <dt>Works at</dt><dd>Layer 6, TD Bank Group</dd>
@@ -370,23 +370,23 @@ const DOCS = [
   snippet:'Built a multimodal RAG system on MedGemma that turns radiology reports and lab PDFs into FHIR-compliant summaries, plus a vision-language explainer that shows its reasoning with region-of-interest heatmaps.',
   answer:'At Remeda, a medical imaging AI startup, he\'s the founding ML engineer. He built a MedGemma-based pipeline that turns radiology reports and lab PDFs into FHIR-compliant summaries, with heatmaps that show what the model looked at.'},
 
- {id:'vigilant', type:'projects', title:'Vigilant · on-device fraud prevention', when:'2026 – now', status:'Building', line:'Verify-then-trust fraud defence that runs on the phone.', site:'Vigilant', path:'projects › vigilant',
-  tags:'vigilant fraud prevention scam security on-device privacy mobile os b2b2c',
-  q:'What is Vigilant?',
-  snippet:'An on-device AI engine that stops fraud before it lands. It builds a context-aware knowledge layer over operating system metadata and follows a privacy-first verify-then-trust model.',
-  answer:'Vigilant is an on-device AI fraud-prevention engine he\'s building. It reads context from the phone itself and works on a privacy-first, verify-then-trust model.'},
-
  {id:'uoft', type:'about', title:'University of Toronto · BSc Computer Science', when:'2022 – 2026', site:'Education', path:'education › uoft',
-  tags:'school university uoft toronto education degree computer science cs graduate courses study studied grad gpa agpa co-op',
+  tags:'school university uoft toronto education degree computer science cs graduate courses study studied grad co-op',
   q:'Where did Vihaan go to school?',
-  snippet:'Computer Science Specialist (Co-op) focused on AI and data analytics, with a 4.0 AGPA, finished early in spring 2026. Coursework ran from network cascade theory (CSC303) and operations research (RSM470) to options (MGT230) and the Business of Software (CSC454).',
-  answer:'He studied Computer Science at the University of Toronto, specializing in AI and data analytics, finished with a 4.0 AGPA, and graduated early in spring 2026.'},
+  snippet:'Computer Science Specialist (Co-op) focused on AI and data analytics, finished early in spring 2026. Coursework ran from network cascade theory (CSC303) and operations research (RSM470) to options (MGT230) and the Business of Software (CSC454).',
+  answer:'He studied Computer Science at the University of Toronto, specializing in AI and data analytics, and graduated early in spring 2026.'},
 
  {id:'vector', type:'research', title:'Beyond Toxicity · interpretability research', status:'Research', line:'What abuse detectors actually learn.', site:'Vector Institute', path:'research › beyond-toxicity',
   tags:'research vector institute interpretability abuse detection toxicity bert gemini distilgpt2 nlp safety',
   q:'What research has Vihaan done?',
   snippet:'Interpretability research at the Vector Institute comparing Gemini, BERT and DistilGPT2 on abuse detection, with a Streamlit dashboard for exploring how each model behaves.',
   answer:'At the Vector Institute he worked on interpretability for abuse detection, comparing Gemini, BERT and DistilGPT2 and building a dashboard to explore the results.'},
+
+ {id:'hci', type:'research', title:'Trust in AI · HCI research', status:'Research', line:'When people lean on AI too much, and how design helps.', site:'Research', path:'research › trust-calibration',
+  tags:'research hci human computer interaction trust calibration overreliance reliance paper design users',
+  q:'Has Vihaan published research?',
+  snippet:'Human-computer interaction research on trust calibration: when people over-rely on AI, and how interface design can help them trust it the right amount.',
+  answer:'His HCI research looked at trust calibration, meaning when people over-rely on AI and how design can help them trust it the right amount.'},
 
  {id:'parlons', type:'projects', title:'Parlons · French for the TCF', status:'Live', line:'TCF prep from A1 to B2, with speaking and writing.', site:'vivic04.github.io', path:'parlons', url:'https://vivic04.github.io/parlons/',
   tags:'parlons french language tcf exam app learning pwa',
@@ -412,8 +412,8 @@ const DOCS = [
   snippet:'A single-file HTML tool for pulling the signal out of earnings call transcripts.',
   answer:'Earnings Lens is a lightweight tool he built for analyzing earnings call transcripts.'},
 
- {id:'compass', type:'projects', title:'CareerCompass · career coaching', status:'Wrapped', line:'Coaching people into software engineering roles.', site:'Projects', path:'projects › careercompass',
-  tags:'careercompass career coaching business mentoring swe software engineering jobs entrepreneur',
+ {id:'compass', type:'projects', title:'CareerCompass · coaching business', status:'Wrapped', line:'Coaching people into software engineering roles.', site:'Projects', path:'projects › careercompass',
+  tags:'careercompass coaching business mentoring swe software engineering jobs entrepreneur',
   q:'Has Vihaan run a business before?',
   snippet:'Ran a career coaching business that helped people land software engineering roles, with a job search plan, outreach templates and a technical roadmap for each client.',
   answer:'Yes. Before Aptic he ran CareerCompass, a coaching business that helped people land software engineering roles.'},
@@ -424,8 +424,8 @@ const DOCS = [
   snippet:'A security scanner for vibe-coded apps that catches exposed API keys and broken auth. An AI compliance gateway for regulated companies. Both explored, both shelved in favour of Aptic.',
   answer:'He explored a security scanner for vibe-coded apps and an AI compliance gateway, then shelved both to focus on Aptic.'},
 
- {id:'stack', type:'about', title:'Toolkit', site:'Skills', path:'about › toolkit',
-  tags:'skills tools stack languages tech technology claude cursor copilot python ollama github vercel build langchain power bi',
+ {id:'stack', type:'about', title:'Toolkit & skills', site:'Skills', path:'about › toolkit',
+  tags:'skills tools stack languages tech technology claude cursor copilot python ollama github vercel langchain power bi',
   q:'What tools does Vihaan use?',
   snippet:'Daily drivers are Claude, Cursor and GitHub Copilot, plus open models running locally. Builds with Python and LangChain, analyzes in Power BI, ships web apps to GitHub Pages and Vercel, and turns the results into decks executives can act on.',
   answer:'He builds with Claude, Cursor, GitHub Copilot, Python and LangChain, runs open models locally, and ships to GitHub Pages and Vercel. Then he turns the results into decks executives can act on.'},
@@ -465,40 +465,130 @@ const TIMELINE = [
 ];
 const TABS = [['all','All'],['work','Work'],['projects','Projects'],['research','Research'],['about','About'],['fun','Fun']];
 const SUGGEST = ['Who is Vihaan?','What is Aptic?','What does he do at TD?','Work experience','Side projects','What does he do for fun?'];
-const LUCKY = ['Does he speak French?','What hardware does he run?','How does the router work?','Ideas he killed','What tools does he use?','Formula 1','What did he build at Remeda?','What is Vigilant?'];
+const LUCKY = ['Does he speak French?','What hardware does he run?','How does the router work?','Ideas he killed','What tools does he use?','Formula 1','What did he build at Remeda?','Has he done research?'];
 const AC_POOL = [...new Set([...SUGGEST,...LUCKY,...DOCS.map(d=>d.q)])];
-
-const STOP = new Set('a an the is are was were what whats who whos does do did his he him about of in on at to for and or with how where when why tell me show i you can could any has have had be been vihaan vihaans chugh s it its this that from by'.split(' '));
-const SYN = {school:'uoft university education',college:'uoft university education',degree:'education',uni:'university',gpa:'agpa',grades:'agpa',
-  job:'work',jobs:'work',career:'work',employer:'work',experience:'work intern',internship:'intern',internships:'intern',resume:'work education',cv:'work education',
-  company:'aptic startup',startup:'aptic startup',founder:'aptic founding',ceo:'aptic',building:'aptic projects',side:'projects',project:'projects',
-  hobbies:'interests fun',hobby:'interests',fun:'interests',french:'parlons',email:'contact',hire:'contact',reach:'contact',linkedin:'contact',
-  skills:'stack',tech:'stack',td:'layer td',bank:'layer td',ml:'router research remeda',paper:'research',papers:'research',gpu:'lab',f1:'formula',
-  speak:'french parlons',language:'french parlons',everything:'about',medical:'remeda',health:'remeda',fraud:'vigilant',security:'vigilant scanner',ideas:'graveyard'};
 
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const RM = matchMedia('(prefers-reduced-motion: reduce)');
-const tokenize = q=>q.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]+/g,' ').split(/\s+/).filter(t=>t.length>1 && !STOP.has(t)).map(t=>t.length>4 && t.endsWith('s') && !t.endsWith('ss') ? t.slice(0,-1) : t);
-const norm = s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
-DOCS.forEach(d=>{d._t=norm(d.title).split(/[^a-z0-9]+/); d._g=norm(d.tags).split(' '); d._b=norm(d.snippet+' '+(d.more||''));});
+/* ---------- search engine: field-weighted, IDF-ranked, typo-tolerant ---------- */
+const STOP = new Set(('a an the is are was were what whats who whos does do did his he him about of in on at to for and or with how where when why '+
+  'tell me show i you can could any has have had be been vihaan vihaans chugh s it its this that from by much many some there their they your my '+
+  'ever into like know get got would should which kind doe play').split(' '));
+// extra ways people ask for each entry
+const ASKS = {
+  bio:'who introduce summary background overview tell everything person live lives location based toronto from canada',
+  layer6:'current job role day work now employer position title responsibilities leadership executives coo team',
+  tdintern:'td intern internship first td role clari rag langchain',
+  ey:'consulting audit risk controls big four',
+  deloitte:'consulting analytics dashboards big four',
+  buhler:'first internship manufacturing swiss industrial',
+  aptic:'startup company founder cofounder ceo building business yc accelerator',
+  router:'how does router work model routing item response theory llm selection',
+  remeda:'medical healthcare health radiology hospital clinical imaging doctor',
+  uoft:'school university college degree education study studied graduate major courses class',
+  vector:'research paper interpretability toxicity abuse nlp',
+  hci:'research paper published publication trust human',
+  parlons:'french language learn speak francais tcf',
+  intersection:'soft skills communication negotiation sales self improvement habit',
+  packs:'prompt prompting context copilot',
+  earnings:'finance stocks earnings investing tool',
+  compass:'business coaching mentor career teach entrepreneur side hustle',
+  graveyard:'ideas failed killed abandoned dropped other startups',
+  stack:'skills tools stack tech technical languages programming code coding python engineer',
+  approach:'philosophy values approach goals vision future aspire want strengths technical builder product',
+  lab:'computer pc gpu hardware setup rig local models',
+  fun:'hobbies hobby fun free time weekend interests sport sports passion enjoy',
+  contact:'contact email reach hire hiring connect linkedin github talk'
+};
+const SYN = {
+  school:'education university uoft',college:'education university uoft',uni:'university uoft',degree:'education',study:'education',studied:'education',
+  job:'work layer',jobs:'work',employer:'layer',experience:'work intern',internship:'intern',resume:'work education',cv:'work education',
+  company:'aptic startup',startup:'aptic',building:'aptic startup',build:'aptic projects',career:'work layer timeline',founder:'aptic',ceo:'aptic',side:'projects',project:'projects',app:'projects',apps:'projects',
+  hobby:'fun interests',hobbies:'fun interests',free:'fun',weekend:'fun',sport:'tennis formula',sports:'tennis formula',
+  racing:'formula',car:'formula',cars:'formula',f1:'formula',stock:'markets investing',stocks:'markets investing',invest:'investing',trading:'markets',
+  cook:'recipe cooking',cooking:'recipe',food:'recipe cooking',french:'parlons',speak:'french',language:'french',
+  email:'contact',hire:'contact',reach:'contact',linkedin:'contact',skills:'stack',tech:'stack',coding:'stack python',
+  td:'layer td',bank:'td layer',ml:'machine learning router remeda',llm:'router aptic models',model:'router models',models:'router',
+  paper:'research',papers:'research',published:'research hci',gpu:'lab rtx',medical:'remeda',health:'remeda',healthcare:'remeda',
+  consulting:'ey deloitte',ideas:'graveyard',live:'toronto',lives:'toronto',city:'toronto',based:'toronto',
+  current:'layer aptic',now:'layer aptic',currently:'layer aptic'
+};
+const norm = s=>String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function stem(w){
+  if(w.length>5 && w.endsWith('ing')) return w.slice(0,-3);
+  if(w.length>4 && w.endsWith('ied')) return w.slice(0,-3)+'y';
+  if(w.length>4 && w.endsWith('ed')) return w.slice(0,-2);
+  if(w.length>4 && w.endsWith('ies')) return w.slice(0,-3)+'y';
+  if(w.length>3 && w.endsWith('s') && !w.endsWith('ss') && !w.endsWith('us')) return w.slice(0,-1);
+  return w;
+}
+const words = s=>norm(s).replace(/[^a-z0-9]+/g,' ').trim().split(' ').filter(Boolean);
+const terms = s=>words(s).map(stem);
 
-function score(d,toks){
-  let s=0;
-  for(const [t,w] of toks){
-    if(d._t.some(x=>x.startsWith(t))) s+=6*w;
-    if(d._g.some(x=>x.startsWith(t))) s+=4*w;
-    if(d._b.includes(t)) s+=1.5*w;
+const N = DOCS.length, DF = {}, VOCAB = new Set();
+DOCS.forEach(d=>{
+  d._t=norm(d.title).split(/[^a-z0-9]+/); d._g=norm(d.tags).split(' '); d._b=norm(d.snippet+' '+(d.more||''));
+  d.F = {
+    T:new Set(terms(d.title)),
+    G:new Set(terms(d.tags+' '+(d.site||''))),
+    Q:new Set(terms(d.q+' '+(ASKS[d.id]||''))),
+    B:new Set(terms(d.snippet+' '+(d.more||'')+' '+d.answer))
+  };
+  const all=new Set([...d.F.T,...d.F.G,...d.F.Q,...d.F.B]);
+  all.forEach(t=>{ DF[t]=(DF[t]||0)+1; VOCAB.add(t); });
+});
+const idf = t=>Math.log(1+N/((DF[t]||0)+.5));
+function lev(a,b){
+  if(Math.abs(a.length-b.length)>2) return 9;
+  const m=a.length,n=b.length; let prev=Array.from({length:n+1},(_,j)=>j);
+  for(let i=1;i<=m;i++){ const cur=[i]; for(let j=1;j<=n;j++) cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1)); prev=cur; }
+  return prev[n];
+}
+function fix(t){
+  if(VOCAB.has(t) || t.length<4) return [t,1];
+  // a partial word being typed: prefix of a known term
+  for(const v of VOCAB) if(v.startsWith(t)) return [v,.9];
+  let best=null,bd=9; const lim=t.length>=8?2:1;
+  for(const v of VOCAB){ const d=lev(t,v); if(d<bd){ bd=d; best=v; } }
+  return bd<=lim ? [best,.8] : [t,1];
+}
+const FW = {T:3,G:2.4,Q:2,B:1};
+const BOOST = {aptic:1.2,layer6:1.15,bio:1.1,stack:1.1,remeda:1.05};
+function fieldHit(set,t){
+  if(set.has(t)) return 1;
+  if(t.length>=4) for(const w of set) if(w.length>t.length && w.startsWith(t)) return .7;
+  return 0;
+}
+function score(d,groups){
+  let total=0, matched=0;
+  for(const g of groups){
+    let best=0;
+    for(const [t,w] of g){
+      let m=0; for(const f in FW) m=Math.max(m,FW[f]*fieldHit(d.F[f],t));
+      best=Math.max(best,m*w*idf(t));
+    }
+    if(best>0){ total+=best; matched++; }
   }
-  return s;
+  const cov = groups.length ? matched/groups.length : 0;
+  return {s: total*(.35+.65*cov*cov)*(BOOST[d.id]||1), cov};
 }
 function search(q){
-  const base = tokenize(q);
-  const toks = base.map(t=>[t,1]);
-  base.forEach(t=>{ if(SYN[t]) SYN[t].split(' ').forEach(x=>toks.push([x,.7])); });
-  if(!base.length) return {all:true, hits:DOCS.map((d,i)=>({d,s:100-i})), base};
-  const hits = DOCS.map(d=>({d,s:score(d,toks)})).filter(h=>h.s>0).sort((a,b)=>b.s-a.s);
-  return {all:false, hits, base};
+  const raw = words(q).filter(w=>w.length>1 && !STOP.has(w));
+  const base = raw.map(stem);
+  if(!base.length) return {all:true, hits:DOCS.map((d,i)=>({d,s:100-i,cov:1})), base:[], weak:false};
+  const groups = raw.map((w,k)=>{
+    const [t,wt]=fix(base[k]);
+    const g=[[t,wt]];
+    const syn = SYN[w]||SYN[base[k]]||SYN[t];
+    if(syn) syn.split(' ').forEach(x=>g.push([stem(x),.6]));
+    return g;
+  });
+  let hits = DOCS.map(d=>({d,...score(d,groups)})).filter(h=>h.s>0).sort((a,b)=>b.s-a.s);
+  if(hits.length){ const top=hits[0].s; hits=hits.filter(h=>h.s>=top*.28); }
+  const weak = !hits.length || hits[0].cov<.5;
+  const hl = [...new Set(groups.map(g=>g[0][0]).concat(raw))];
+  return {all:false, hits, base:hl, weak};
 }
 
 /* ---------- wordmark ---------- */
@@ -545,7 +635,7 @@ const WORKY = /(work|job|career|experience|resume|cv|intern|employ|role|history)
 const PROJY = /(project|build|built|startup|app|side|making)/;
 
 function render(){
-  const {hits,base,all} = state.res;
+  const {hits,base,all,weak} = state.res;
   const counts={all:hits.length}; hits.forEach(h=>counts[h.d.type]=(counts[h.d.type]||0)+1);
   $('#tabs').innerHTML = TABS.filter(([k])=>k==='all'||counts[k]).map(([k,l])=>
     `<button class="tab" role="tab" data-tab="${k}" aria-selected="${state.tab===k}">${l}<span class="n">${counts[k]||0}</span></button>`).join('');
@@ -563,8 +653,8 @@ function render(){
   }
   const top = shown[0].d;
   let ov = state.tab!=='all' ? [top] : all ? [DOCS[0]] : [hits[0].d];
-  if(state.tab==='all' && !all && hits[1] && hits[1].s>=hits[0].s*.6) ov.push(hits[1].d);
-  const ovText = ov.map(d=>d.answer).join(' ');
+  if(state.tab==='all' && !all && !weak && hits[1] && hits[1].s>=hits[0].s*.75 && hits[1].cov>=hits[0].cov) ov.push(hits[1].d);
+  const ovText = (weak?'Nothing in the index matches that exactly. Here is the closest thing. ':'')+ov.map(d=>d.answer).join(' ');
 
   const ql = norm(state.q);
   const workHits = shown.filter(h=>h.d.type==='work').length;
@@ -582,7 +672,7 @@ function render(){
 
   main.innerHTML = `<p class="stats">About ${shown.length} result${shown.length>1?'s':''} (${state.ms.toFixed(4)} seconds) · every one about Vihaan</p>
     <section class="overview live reveal" aria-live="polite">
-      <div class="ov-head">${SPARK}Vindex Overview<span class="beta">grounded in ${ov.length} source${ov.length>1?'s':''}</span></div>
+      <div class="ov-head">${SPARK}${weak?'Closest match':'Vindex Overview'}<span class="beta">grounded in ${ov.length} source${ov.length>1?'s':''}</span></div>
       <div class="ov-text" id="ovText"></div>
       <div class="ov-src">${ov.map((d,k)=>`<button type="button" data-jump="${d.id}"><span class="num">${k+1}</span>${esc(d.title.split(' · ')[0])}</button>`).join('')}</div>
     </section>
@@ -685,7 +775,7 @@ $('#tryChips').insertAdjacentHTML('beforeend',SUGGEST.map(s=>`<button class="chi
 
 /* ---------- the constellation: every keyword in the index, floating in depth ---------- */
 const KW = ['Aptic','Layer 6','MedGemma','TD','RAG','IRT','router','Vector','EY','Deloitte','Bühler','Toronto','F1','tennis','French','TCF',
-  'Ollama','RTX 4080','LangChain','Claude','Cursor','Python','Power BI','FHIR','fraud','agents','COBIT','U of T','4.0','Remeda','Vigilant',
+  'Ollama','RTX 4080','LangChain','Claude','Cursor','Python','Power BI','FHIR','co-op','agents','COBIT','U of T','HCI','Remeda','trust',
   'Parlons','Intersection','strategy','founder','CEO','interpretability','BERT','Gemini','Qwen','markets','literacy','partnerships',
   'heatmaps','routing','Context Packs','Earnings Lens','negotiation','sales','Copilot','SAP','Palantir','ServiceNow','DistilGPT2',
   'quality per dollar','on-device','co-op','Vercel','intelligence','transformation','CareerCompass','research','embeddings'];
