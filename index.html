@@ -298,6 +298,7 @@ kbd{font:500 11px var(--mono);border:1px solid var(--line);border-bottom-width:2
             <dt>Works at</dt><dd>Layer 6, TD Bank Group</dd>
             <dt>Building</dt><dd>Aptic (co-founder, CEO)</dd>
             <dt>Studied</dt><dd>Computer Science, University of Toronto</dd>
+            <dt>Grew up in</dt><dd>Nigeria</dd>
             <dt>Based in</dt><dd>Toronto, Canada</dd>
             <dt>Off hours</dt><dd>F1, markets, tennis, French</dd>
           </dl>
@@ -319,6 +320,12 @@ const DOCS = [
   q:'Who is Vihaan Chugh?',
   snippet:'Toronto-based builder working where AI engineering meets strategy. Senior AI Strategy Analyst at Layer 6, TD Bank Group\'s AI Centre of Excellence, and co-founder of the startup Aptic.',
   answer:'Vihaan Chugh is a Toronto-based builder who works where AI engineering meets strategy. By day he\'s a Senior AI Strategy Analyst at Layer 6, TD Bank Group\'s AI Centre of Excellence. On nights and weekends he\'s co-founding Aptic, a startup that helps teams get more value out of their AI agents.'},
+
+ {id:'origin', type:'about', title:'Grew up in Nigeria', site:'About', path:'about › origin-story',
+  tags:'nigeria nigerian grew up childhood origin story hometown africa lagos background roots',
+  q:'Where did Vihaan grow up?',
+  snippet:'Grew up in Nigeria before moving to Toronto for university. Now he builds AI in Canada with a perspective most of his peers don\'t have.',
+  answer:'He grew up in Nigeria, then moved to Toronto for university, where he studied Computer Science at U of T.'},
 
  {id:'layer6', type:'work', title:'Senior AI Strategy Analyst · Layer 6, TD Bank Group', when:'Jan 2026 – now', site:'Layer 6 · TD', path:'work › layer-6',
   tags:'layer 6 td bank job work current role strategy operations analyst senior coe centre excellence intelligence hub literacy partnerships transformation product owner',
@@ -465,7 +472,7 @@ const TIMELINE = [
 ];
 const TABS = [['all','All'],['work','Work'],['projects','Projects'],['research','Research'],['about','About'],['fun','Fun']];
 const SUGGEST = ['Who is Vihaan?','What is Aptic?','What does he do at TD?','Work experience','Side projects','What does he do for fun?'];
-const LUCKY = ['Does he speak French?','What hardware does he run?','How does the router work?','Ideas he killed','What tools does he use?','Formula 1','What did he build at Remeda?','Has he done research?'];
+const LUCKY = ['Does he speak French?','What hardware does he run?','How does the router work?','Ideas he killed','What tools does he use?','Formula 1','Where did he grow up?','What did he build at Remeda?','Has he done research?'];
 const AC_POOL = [...new Set([...SUGGEST,...LUCKY,...DOCS.map(d=>d.q)])];
 
 const $ = s=>document.querySelector(s);
@@ -473,11 +480,12 @@ const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;
 const RM = matchMedia('(prefers-reduced-motion: reduce)');
 /* ---------- search engine: field-weighted, IDF-ranked, typo-tolerant ---------- */
 const STOP = new Set(('a an the is are was were what whats who whos does do did his he him about of in on at to for and or with how where when why '+
-  'tell me show i you can could any has have had be been vihaan vihaans chugh s it its this that from by much many some there their they your my '+
+  'tell me show i you can could any has have had be been vihaan vihaans chugh s it its this that by much many some there their they your my '+
   'ever into like know get got would should which kind doe play').split(' '));
 // extra ways people ask for each entry
 const ASKS = {
-  bio:'who introduce summary background overview tell everything person live lives location based toronto from canada',
+  bio:'who introduce summary background overview tell everything person live lives location based toronto canada',
+  origin:'grow grew up childhood where from hometown born raised country nigeria roots',
   layer6:'current job role day work now employer position title responsibilities leadership executives coo team',
   tdintern:'td intern internship first td role clari rag langchain',
   ey:'consulting audit risk controls big four',
@@ -511,7 +519,7 @@ const SYN = {
   email:'contact',hire:'contact',reach:'contact',linkedin:'contact',skills:'stack',tech:'stack',coding:'stack python',
   td:'layer td',bank:'td layer',ml:'machine learning router remeda',llm:'router aptic models',model:'router models',models:'router',
   paper:'research',papers:'research',published:'research hci',gpu:'lab rtx',medical:'remeda',health:'remeda',healthcare:'remeda',
-  consulting:'ey deloitte',ideas:'graveyard',live:'toronto',lives:'toronto',city:'toronto',based:'toronto',
+  consulting:'ey deloitte',ideas:'graveyard',live:'toronto',lives:'toronto',grew:'nigeria origin',raised:'nigeria origin',childhood:'nigeria origin',hometown:'nigeria',city:'toronto',based:'toronto',
   current:'layer aptic',now:'layer aptic',currently:'layer aptic'
 };
 const norm = s=>String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
@@ -775,7 +783,7 @@ $('#tryChips').insertAdjacentHTML('beforeend',SUGGEST.map(s=>`<button class="chi
 
 /* ---------- the constellation: every keyword in the index, floating in depth ---------- */
 const KW = ['Aptic','Layer 6','MedGemma','TD','RAG','IRT','router','Vector','EY','Deloitte','Bühler','Toronto','F1','tennis','French','TCF',
-  'Ollama','RTX 4080','LangChain','Claude','Cursor','Python','Power BI','FHIR','co-op','agents','COBIT','U of T','HCI','Remeda','trust',
+  'Ollama','RTX 4080','LangChain','Claude','Cursor','Python','Power BI','FHIR','co-op','agents','COBIT','U of T','Nigeria','HCI','Remeda','trust',
   'Parlons','Intersection','strategy','founder','CEO','interpretability','BERT','Gemini','Qwen','markets','literacy','partnerships',
   'heatmaps','routing','Context Packs','Earnings Lens','negotiation','sales','Copilot','SAP','Palantir','ServiceNow','DistilGPT2',
   'quality per dollar','on-device','co-op','Vercel','intelligence','transformation','CareerCompass','research','embeddings'];
